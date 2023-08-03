@@ -31,9 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # add polls app to installed apps
-    'polls.apps.PollsConfig',
+    'polls.apps.PollsConfig',   # add polls app to installed apps
 
+    # these were installed when the project was created
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

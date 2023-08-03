@@ -19,6 +19,7 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
+
 # choice model which contains the choice text and its vote tally; question foreign key
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
